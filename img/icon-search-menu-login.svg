@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="261" height="29.833" viewBox="0 0 261 29.833">
+  <g id="그룹_1057" data-name="그룹 1057" transform="translate(-57 -440)">
+    <g id="그룹_380" data-name="그룹 380" transform="translate(460.544 -300.65)">
+      <path id="패스_341" data-name="패스 341" d="M-400.924,743.272a8.973,8.973,0,0,0,0,12.675,8.972,8.972,0,0,0,12.675,0,8.972,8.972,0,0,0,0-12.675A8.972,8.972,0,0,0-400.924,743.272Zm11.266,11.266a6.978,6.978,0,0,1-9.857,0,6.979,6.979,0,0,1,0-9.857,6.978,6.978,0,0,1,9.857,0A6.978,6.978,0,0,1-389.658,754.538Z" fill="#fff"/>
+      <path id="패스_342" data-name="패스 342" d="M-371.221,772.974a1,1,0,0,0,0,1.409l4.212,4.212a1,1,0,0,0,1.409,0,1,1,0,0,0,0-1.409l-4.212-4.213A1,1,0,0,0-371.221,772.974Z" transform="translate(-16.076 -16.076)" fill="#fff"/>
+    </g>
+    <text id="SEARCH" transform="translate(57 444)" fill="none" font-size="11" font-family="SegoeUI, Segoe UI" letter-spacing="0.001em" opacity="0.394"><tspan x="-19.801" y="12">SEARCH</tspan></text>
+    <line id="선_28" data-name="선 28" x2="260.5" transform="translate(57 469.834)" fill="none"/>
+  </g>
+</svg>

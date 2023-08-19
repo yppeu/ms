@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Messaget</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+           @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+   
+           body { font-family: 'Lexend Deca', sans-serif; }
+           
+           .PointPtd {
+               font-family: 'Pretendard', sans-serif;
+           }
+                   
+        /* 동그라미 체크박스 기본 스타일 초기화 */
+        .checkAccount1 input[type="checkbox"],
+        .checkAccount2 input[type="checkbox"] {
+            display: none; /* 기본 체크박스 숨김 */
+        }
+
+        /* 동그라미 체크박스 커스텀 스타일 */
+        .checkAccount1 label,
+        .checkAccount2 label {
+            display: inline-block;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            padding-left: 20px; /* 체크박스를 위한 여백 */
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* 동그라미 커스텀 체크박스 이미지 스타일 */
+        .checkAccount1 label::before,
+        .checkAccount2 label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 15px;
+            height: 15px;
+            background-image: url('./img/c-check1.svg'); /* 체크된 상태 이미지 URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 동그라미 체크박스 선택 상태 이미지 스타일 */
+        .checkAccount1 input[type="checkbox"]:checked + label::before,
+        .checkAccount2 input[type="checkbox"]:checked + label::before {
+            background-image: url('./img/c-check0.svg'); /* 체크되지 않은 상태 이미지 URL */
+        }
+       </style>
+</head>
+
+<body class="bg-[#212121] text-white">
+    <div class="absolute top-[30px] right-[30px] w-[18px] h-[18px] z-10 ">
+        <img src="./img/icon-top-big-logo.svg" alt="">
+    </div>
+
+        <div class="relative bg-[#4B4B4B] text-center pt-[76px] pb-[44px]">
+        <div class="w-[105px] h-[105px] mx-auto">
+            <div class="w-full h-full bg-[#ddd] rounded-[105px] overflow-hidden">
+                <img src="./img/icon-frofile.svg" class="w-full h-full" alt="">
+            </div>
+        </div>
+        <div class="pt-[5px]">
+            <div class="w-full text-[20px] font-bold">
+                Username
+            </div>
+            <div class="PointPtd w-full text-[14px] font-extralight mt-[15px] leading-[17px]">
+                Life is message. Message is life<br>maessaget.com
+            </div>
+            <div
+                class="PointPtd mt-[28px] flex flex-col max-w-[210px] m-auto md:flex-row md:flex-wrap md:w-[600px] md:justify-between">
+                <a href="javascript:void(0);"
+                    class="py-[8px] rounded-3xl bg-[#F5BE05] text-[13px] text-black font-bold mb-[5px] md:w-[295px] md:mb-[0]">내
+                    계정 설정</a>
+                <a href="javascript:void(0);"
+                    class="relative py-[8px] rounded-3xl bg-[#fff] text-[13px] text-black font-bold md:w-[295px]">
+                    메시지 확인
+                    <div class="absolute top-[8px] right-[-16px] rounded-[24px] inline-block bg-[#B50000] w-[auto] py-0.5 pr-[8px] pl-[8px] text-[11px] text-[#fff] font-light">
+                      2
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img src="img/icon-tri-darkgray.svg" class="absolute right-0 top-[0px] z-10" alt="">
+        <img src="./img/icon-tri-gray.svg" class="absolute right-0 bottom-[-26px]" alt="">
+        </div>
+
+        <div class="mt-[22px] px-[30px]">
+            <div class="PointPtd text-center">
+                <ul class="flex justify-between pb-[20px] border-b-[2px] text-[12px] text-[#707070] font-bold">
+                    <li class="py-0.5 px-3">정보</li>
+                    <li class="py-0.5 px-3">참여 캠페인</li>
+                    <li class="py-0.5 px-3">컨텐츠</li>
+                    <li class="py-0.5 px-3 ">공감</li>
+                    <li class="py-0.5 px-3 text-black bg-[#fff] rounded-[47px]">주문
+                        <img src="img/icon-s-arr-bk.svg" class="inline  ml-[1px] w-[6px] rotate-[90deg]" alt="">   
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="PointPtd px-[30px]">
+            <div class="text-center border-b-[1px] border-[#707070]">
+                <ul class="flex justify-between pb-[20px] text-[12px] font-medium">
+                    <li class="w-1/4 bg-[#fff] py-[8px] rounded-b-lg text-black font-bold">장바구니</li>
+                    <li class="py-0.5 pt-[8px]">결제내역</li>
+                    <li class="py-0.5 pt-[8px]">취소/반품/교환</li>
+                    <li class="py-0.5 pr-4 pt-[8px]">1:1 문의</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="relative mt-[20px] px-[30px]">
+            <div class="relative text-left pl-[5px]">
+                <span class="text-[18px] font-semibold tracking-tighter">티셔츠는 목소리다</span>
+                <p class="PointPtd text-[11px] text-[#797979]">#MSGT001</p>
+                <a href="#none"
+                    class="PointPtd absolute top-0 right-2 w-[52px] text-[10px] py-0.5 font-extralight border border-[#fff] rounded-[47px] text-center">삭제</a>
+                <a href="#none"
+                    class="PointPtd absolute top-[25px] right-2 w-[52px] text-[10px] py-0.5 font-extralight border border-[#fff] rounded-[47px] text-center">옵션
+                    변경</a>
+            </div>
+        </div>
+
+        <div class="mt-[8px] px-[30px]">
+            <div class="text-left pl-[5px] pb-[20px] border-b-[1px] border-[#707070]">
+                <div class="flex mb-[7px]">
+                    <img src="./img/img-s-sum.svg" class="w-[103px] h-[103px] mr-[15px]" alt="">
+                    <div class="PointPtd flex flex-col">
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">메시지 :</span>
+                            <span class="font-light">LOVE IS LIFE</span>
+                        </div>
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">컬러 :</span>
+                            <span class="font-light">BLACK</span>
+                        </div>
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">사이즈 :</span>
+                            <span class="font-light">L</span>
+                        </div>
+                        <div class="flex items-center text-[12px] mt-[auto]">
+                            <span class="font-extralight mr-1">수량 :</span>
+                            <span class="font-light">1</span>
+                            <div class="ml-[15px] h-[20px] border border-[#797979] text-[#797979] rounded-[20px] flex px-[6px]">
+                                <button type="button">
+                                    <img src="./img/icon-minu-gray.svg" alt="">
+                                </button>
+                                <span class="inline-block bg-[#797979] w-[1px] h-full mx-[4px]"></span>
+                                <button type="button">
+                                    <img src="./img/icon-plus-gray.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[8px] PointPtd">
+                    <div class="flex justify-between">
+                        <div class="checkAccount1">
+                            <input type="checkbox" name="checkaco1" id="checkaco1"
+                                class="relative align-bottom top-[-3px]">
+                            <label for="checkaco1" class="text-[10px] text-[#fff] font-bold">선택 해제</label>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-medium">₩ 45,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative mt-[20px] px-[30px]">
+            <div class="relative text-left pl-[5px]">
+                <span class="text-[18px] font-medium tracking-tighter">ADMAN WORKING</span>
+                <p class="PointPtd text-[11px] text-[#797979]">#ADMWK001</p>
+                <a href="#none"
+                    class="PointPtd absolute top-0 right-2 w-[52px] text-[10px] py-0.5 font-extralight border border-[#fff] rounded-[47px] text-center">삭제</a>
+                <a href="#none"
+                    class="PointPtd absolute top-[25px] right-2 w-[52px] text-[10px] py-0.5 font-extralight border border-[#fff] rounded-[47px] text-center">옵션
+                    변경</a>
+            </div>
+        </div>
+
+        <div class="mt-[8px] px-[30px]">
+            <div class="text-left pl-[5px] pb-[20px] border-b-[1px] border-[#707070]">
+                <div class="flex mb-[7px]">
+                    <img src="./img/img-s-sum.svg" class="w-[103px] h-[103px] mr-[15px]" alt="">
+                    <div class="PointPtd flex flex-col">
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">메시지 :</span>
+                            <span class="font-light">BASIC</span>
+                        </div>
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">컬러 :</span>
+                            <span class="font-light">WHITE</span>
+                        </div>
+                        <div class="flex text-[12px]">
+                            <span class="font-extralight mr-1">사이즈 :</span>
+                            <span class="font-light">S</span>
+                        </div>
+                        <div class="flex items-center text-[12px] mt-[auto]">
+                            <span class="font-extralight mr-1">수량 :</span>
+                            <span class="font-light">1</span>
+                            <div class="ml-[15px] h-[20px] border border-[#797979] text-[#797979] rounded-[20px] flex px-[6px]">
+                                <button type="button">
+                                    <img src="./img/icon-minu-gray.svg" alt="">
+                                </button>
+                                <span class="inline-block bg-[#797979] w-[1px] h-full mx-[4px]"></span>
+                                <button type="button">
+                                    <img src="./img/icon-plus-gray.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[8px] PointPtd">
+                    <div class="flex justify-between">
+                        <div class="checkAccount2">
+                            <input type="checkbox" name="checkaco2" id="checkaco2"
+                                class="relative align-bottom top-[-3px]">
+                            <label for="checkaco2" class="text-[10px] text-[#fff] font-bold">선택 해제</label>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-medium">₩ 42,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-[20px] px-[30px] tracking-tighter">
+            <div class="text-right">
+                <a href="#none"
+                    class="inline-block w-[220px] pt-[14px] pb-[15px]  text-center font-bold text-[14px] text-[#000] bg-[#F5BE05]">결제하기</a>
+            </div>
+        </div>
+
+        <div class="mt-[132px] mb-[13px] ml-[35px]">
+            <span class="text-[9px] text-[#696969] font-semibold tracking-tighter">ⓒ 2023 | MESSAGET</span>
+        </div>
+</body>
+
+</html>

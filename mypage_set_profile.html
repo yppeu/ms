@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        input::placeholder{
+            font-family: 'Lexend Deca', sans-serif; font-size: 11px;
+        }
+
+        .CreateSubmit {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex justify-center bg-[#4B4B4B] text-[#fff] px-[65px] py-[69px]">
+        <img src="img/icon-tri-darkgray.svg" class="absolute w-[30px] top-0 right-0" alt="">
+        <img src="img/icon-top-logo.svg" class="absolute w-[18px] top-[30px] right-[30px]" alt="">
+        <ul class="flex">
+            <li class="text-center">
+                <img src="./img/icon-frofile.svg" class="inline-block w-[88px] rounded-[88px]" alt="">
+                <p class="mt-[12px] text-[11px] font-semibold">프로필 이미지 변경</p>
+            </li>
+            <li class="text-[27px] font-semibold pt-6 ml-[20px]">내 계정 설정</li>
+        </ul>
+    </div>
+
+    <div class="relative bg-[#212121] text-[#fff] pt-[22px] px-[30px] pb-[65px]">
+        <img src="img/icon-tri-gray.svg" class="absolute w-8 h-8 top-0 right-0" alt="">
+        <div class="">
+            <ul class="flex text-[14px] font-light leading-[16px]">
+                <li class="pr-[43px] font-bold tracking-tighter">프로필</li>
+                <li class="pr-[43px] tracking-tighter">개인정보</li>
+                <li class="pr-[43px] tracking-tighter">내 포인트</li>
+                <li class="tracking-tighter">계정 삭제</li>
+            </ul>
+        </div>
+        <div class="mt-[22px] pt-[28px] pb-[45px] border-y border-[#707070]">
+            <p class="text-[15px] font-bold">프로필 정보</p>
+            <div class="mt-[22px]">
+                <div>
+                    <p class="ml-[5px] text-[12px] text-[#aaa] font-medium">사용자 이름</p>
+                    <span class="h-[45px] leading-[3] inline-block text-[14px] font-bold ml-[15px]">SWANSONG</span>
+                    <a href="javascript:void(0)"
+                        class="text-[11px] font-semibold border border-[#fff] py-[4px] px-[12px] ml-[10px] rounded-[60px]">변경</a>
+
+                </div>
+                <div class="mt-[15px] ml-[5px]">
+                    <p class="text-[12px] text-[#aaa] font-medium">한 줄 프로필</p>
+                    <div class="relative">
+                        <input type="text"
+                        class="mt-[5px] w-full h-[45px] pb-[2px] bg-transparent border border-[#C4C4C4] rounded-none">
+                       <span class="absolute right-2 top-[calc(50%+2px)] translate-y-[-50%] flex items-center text-[#5F5F5F] text-[11px] font-medium">0/45</span>
+                    </div>
+                </div>
+                <div class="mt-[15px] ml-[5px]">
+                    <p class="text-[12px] text-[#aaa] font-medium">ABOUT ME</p>
+                    <textarea name="" id=""
+                        class="mt-[5px] w-full h-[120px] bg-transparent border border-[#C4C4C4] resize-none rounded-none"></textarea>
+                </div>
+                <div class="mt-[15px]">
+                    <p class="ml-[5px] text-[12px] text-[#aaa] font-medium">소셜미디어</p>
+                    <ul class="flex justify-between mt-[15px] ml-[15px]">
+                        <li class="text-[11px] text-[#C3C3C3] font-light">등록된 소셜미디어가 없습니다</li>
+                        <li class="text-[11px] text-[#fff] font-bold">
+                            소셜미디어 설정
+                            <img src="./img/icon-s-arr.svg" class="inline rotate-[-90deg]" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-end">
+            <a href="javascript:void(0);"
+            class="CreateSubmit block mt-[20px] bg-[#F5BE05] text-[#000] w-[220px] text-center font-bold text-[14px] py-[14px] tracking-tighter">변경
+            내용 저장</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

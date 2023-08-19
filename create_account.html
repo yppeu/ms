@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>Document</title>
+
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        input::placeholder{
+            font-family: 'Lexend Deca', sans-serif; font-size: 11px;
+        }
+
+        .CreateSubmit , .checkAccount , .copyright {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        /* 기본 스타일 초기화 */
+        .checkAccount input[type="checkbox"] {
+            display: none; /* 기본 체크박스 숨김 */
+        }
+
+        /* 체크박스 커스텀 스타일 */
+        .checkAccount label {
+            display: inline-block;
+            padding-left: 20px; /* 체크박스를 위한 여백 */
+            position: relative;
+            cursor: pointer;
+        } 
+
+        /* 커스텀 체크박스 이미지 스타일 */
+        .checkAccount label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background-image: url('./img/check1.svg'); /* 체크된 상태 이미지 URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 체크박스 선택 상태 이미지 스타일 */
+        .checkAccount input[type="checkbox"]:checked + label::before {
+            background-image: url('./img/check0.svg'); /* 체크되지 않은 상태 이미지 URL */
+        }
+
+    </style>
+</head>
+
+<body class="bg-[#101010] opacity-87">
+    <div class="block m-auto top_nav absolute top-[30px] right-[30px] w-max">
+        <img src="./img/icon-m-logo.svg" alt="로고 이미지">
+    </div>
+    <div class="md:w-[100%] mt-[145px] px-[30px] m-auto">
+        <div class="top_tit mb-6 text-center text-2xl text-[#ffffff] text-[35px]">
+            <h3>NEW ACCOUNT</h3>
+        </div>
+        <div class="text-[#ffffff]">
+            <input type="text" name="id" value=""
+                class="block m-auto mb-1 bg-transparent border-[1px] border-solid border-[#797979] h-[50px] pl-[10px] text-xs font-light w-[100%]"
+                title="이메일" placeholder="Email">
+            <input type="text" name="name"
+                class="block m-auto mb-1 bg-transparent border-[1px] border-solid border-[#797979] h-[50px] pl-[10px] text-xs font-light w-[100%]"
+                title="이름" placeholder="Username">
+            <input type="password" name="passwd"
+                class="block m-auto mb-1 bg-transparent border-[1px] border-solid border-[#797979] h-[50px] pl-[10px] text-xs font-light w-[100%]"
+                title="비밀번호" placeholder="Password">
+            <input type="password" name="passwd"
+                class="block m-auto bg-transparent border-[1px] border-solid border-[#797979] h-[50px] pl-[10px] text-xs font-light w-[100%]"
+                title="비밀번호" placeholder="Confirm Password">
+        </div>
+        <div class="checkAccount relative w-full block m-auto mb-[25px] text-xs text-left font-light">
+            <input type="checkbox" name="checkaco" id="checkaco" class="mt-[5px] mb-[25px] cursor-pointer">
+            <label for="checkaco" class="absolute top-[5px] text-[11px] text-[#ffffff] pt-[5px] pl-[5px] cursor-pointer">I agree to 
+                <span class="text-[#F5BE05]">terms of use </span>and 
+                <span class="text-[#F5BE05]">privacy policy</span>
+            </label>
+        </div>
+        <div class="CreateSubmit">
+            <a href="#none"
+              class="bg-[#F5BE05] h-[50px] leading-[50px] block mx-auto mb-1 text-center text-[#0D0D0D] text-[14px] font-bold tracking-tighter">CREATE</a>
+          </div>
+    </div>
+
+    <div class="footer_wrap mt-[125px] pl-[35px]">
+        <span class="copyright block m-auto absolute pb-[13px] text-[9px] text-[#696969] font-semibold tracking-tighter">ⓒ 2023 |
+            MESSAGET</span>
+    </div>
+
+</body>
+
+</html>

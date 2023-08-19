@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+       
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        input::placeholder{
+            font-family: 'Lexend Deca', sans-serif; font-size: 11px;
+        }
+        .point_group {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#212121] h-[100vh]">
+
+    <div class="flex justify-center bg-[#4B4B4B] text-[#fff] px-[65px] py-[70px]">
+        <img src="./img/icon-tri-darkgray.svg" class="absolute w-[30px] top-0 right-0" alt="">
+        <img src="./img/icon-m-logo.svg" class="absolute w-[18px] top-[30px] right-[30px]" alt="">
+        <ul class="flex">
+            <li class="text-center">
+                <img src="./img/icon-frofile.svg" class="inline-block w-[88px] rounded-[88px]" alt="">
+            </li>
+            <li class="text-[27px] font-semibold pt-6 ml-[20px]">내 계정 설정</li>
+        </ul>
+    </div>
+
+    <div class="point_group relative bg-[#212121] text-[#fff] px-[30px] pt-[22px] pb-[75px]">
+        <img src="./img/icon-tri-gray.svg" class="absolute w-8 h-8 top-0 right-0" alt="">
+        <div class="">
+            <ul class="flex justify-between text-[14px] font-light leading-[16px]">
+                <li class="tracking-tighter">프로필</li>
+                <li class="tracking-tighter">개인정보</li>
+                <li class="tracking-tighter">내 포인트</li>
+                <li class="font-extrabold tracking-tighter">계정 삭제</li>
+            </ul>
+        </div>
+        <div class="mt-[22px] pt-[45px] border-t border-[#707070]">
+            <div>
+                <div>
+                    <p class="pl-[5px] pb-[20px] text-[14px] font-medium text-[#DDDDDD] tracking-tighter">정말로 계정을 삭제 하시겠습니까?<br>
+                        삭제된 데이터는 다시 되돌릴 수 없습니다</p>
+                    <span class="pl-[5px] text-[14px] font-bold h-[50px] block leading-[3]">swansong@messaget.com</span>
+                </div>
+                <div>
+                    <input type="text"
+                        class="pb-[2px] w-full h-[50px] bg-transparent border border-[#C4C4C4] rounded-none text-[11px] pl-[10px]"
+                        placeholder="Password">
+                    <a href="javascript:void(0);"
+                        class="block mt-[20px] bg-[#F5BE05] text-[#000] w-full text-center text-[14px] font-bold py-[14px] tracking-tighter">영구
+                        삭제</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

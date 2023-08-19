@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        input::placeholder{
+            font-family: 'Lexend Deca', sans-serif; font-size: 15px;
+        }
+
+        .point_group {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        .terms {
+            font-family: 'Pretendard', sans-serif;
+        }
+        /* 네모 체크박스 기본 스타일 초기화 */
+        .checkAccount input[type="checkbox"] {
+            display: none; /* 기본 체크박스 숨김 */
+        }
+
+        /* 네모 체크박스 커스텀 스타일 */
+        .checkAccount label {
+            display: inline-block;
+            line-height: 1.1;
+            padding-left: 20px; /* 체크박스를 위한 여백 */
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* 네모 커스텀 체크박스 이미지 스타일 */
+        .checkAccount label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background-image: url('./img/check1.svg'); /* 체크된 상태 이미지 URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 네모 체크박스 선택 상태 이미지 스타일 */
+        .checkAccount input[type="checkbox"]:checked + label::before {
+            background-image: url('./img/check0.svg'); /* 체크되지 않은 상태 이미지 URL */
+        }
+
+        
+        /* 동그라미 체크박스 기본 스타일 초기화 */
+        .checkAccount2 input[type="checkbox"] {
+            display: none; /* 기본 체크박스 숨김 */
+        }
+
+        /* 동그라미 체크박스 커스텀 스타일 */
+        .checkAccount2 label {
+            display: inline-block;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            padding-left: 20px; /* 체크박스를 위한 여백 */
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* 동그라미 커스텀 체크박스 이미지 스타일 */
+        .checkAccount2 label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-image: url('./img/c-check1.svg'); /* 체크된 상태 이미지 URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 동그라미 체크박스 선택 상태 이미지 스타일 */
+        .checkAccount2 input[type="checkbox"]:checked + label::before {
+            background-image: url('./img/c-check0.svg'); /* 체크되지 않은 상태 이미지 URL */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flex justify-center bg-[#4B4B4B] text-[#fff] px-[65px] py-[70px]">
+        <img src="./img/icon-tri-darkgray.svg" class="absolute w-[30px] top-0 right-0" alt="">
+        <img src="./img/icon-m-logo.svg" class="absolute w-[18px] top-[30px] right-[30px]" alt="">
+        <ul class="flex">
+            <li class="text-center">
+                <img src="./img/icon-frofile.svg" class="inline-block w-[88px] rounded-[88px]" alt="">
+            </li>
+            <li class="text-[27px] font-semibold pt-6 ml-[20px]">내 계정 설정</li>
+        </ul>
+    </div>
+
+    <div class="point_group relative bg-[#212121] text-[#fff] pt-[22px] px-[30px] pb-[75px]">
+        <img src="./img/icon-tri-gray.svg" class="absolute w-8 h-8 top-0 right-0" alt="">
+        <div>
+            <ul class="flex justify-between text-[14px] font-light leading-[16px]">
+                <li class="tracking-tighter">프로필</li>
+                <li class="tracking-tighter">개인정보</li>
+                <li class="font-bold">내 포인트</li>
+                <li class="tracking-tighter">계정 삭제</li>
+            </ul>
+        </div>
+        <div class="mt-[22px] pt-[28px] border-t border-[#707070]">
+            <div class="">
+                <div class="">
+                    <p class="text-[15px] font-bold text-[#fff]">내 포인트</p>
+                    <span class="text-[50px] font-right tracking-tighter font-light pl-[5px] mb-[22px] pr-[15px]">216,000
+                        <img src="./img/icon-T.svg"
+                            class="inline-block" alt="">
+                    </span>
+                    <p class="text-[12px] font-bold pl-[5px] pb-[20px]">상세내역
+                        <img src="./img/icon-s-arr.svg" class="inline mt-[-2px] ml-[2px] -[20px]">
+                    </p>
+                </div>
+
+                <div class="border-b border-[#333333]">
+                    <p class="pl-[15px] text-[11px] text-[#aaa] font-medium border-b border-[#333333] pb-[10px]">내 컨텐츠</p>
+                    <div class="flex justify-between items-end pl-[15px] py-[10px] border-b border-[#333333]">
+                        <div class="flex">
+                            <img src="./img/img-s-sum.svg" class="w-[40px] h-[40px]" alt="제품이미지">
+                            <div class="flex flex-col ml-[13px] mr-[70px]">
+                                <p class="text-[11px] font-light">LOVE</p>
+                                <div class="flex">
+                                    <p class="text-[18px] font-light pr-[5px]">3000</p>
+                                    <img src="./img/icon-X.svg" class="pr-[5px]" alt="">
+                                    <p class="text-[18px] font-light">72</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-[18px] font-light">216,000</p>
+                    </div>
+                    <div class="flex justify-between items-end pl-[15px] py-[10px] border-b border-[#333333]">
+                        <div class="flex">
+                            <img src="./img/img-s-sum.svg" class="w-[40px] h-[40px]" alt="제품이미지">
+                            <div class="flex flex-col ml-[10px] mr-[70px]">
+                                <p class="text-[11px] font-light">침묵하는예술가는필요없다</p>
+                                <div class="flex">
+                                    <p class="text-[18px] font-light pr-[5px]">4000</p>
+                                    <img src="./img/icon-X.svg" class="pr-[5px]" alt="">
+                                    <p class="text-[18px] font-light">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-[18px] font-light">0</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center py-[18px] border-b border-[#707070]">
+                    <span class="text-[11px] font-light ml-[10px] text-[#484848]">TOTAL</span>
+                    <p class="text-[20px] font-light">216,000 T</p>
+                </div>
+
+                <div class="mb-[30px] terms">
+                    <div class="pt-[20px] ml-[15px]">
+                        <p class="text-[12px] font-light text-[#B4B4B4] tracking-tighter mb-[13px]">
+                            플랫폼 내에서 포인트 사용은 제한 금액 없이 사용가능하나<br>
+                            포인트 출금은 100,000T 이상 부터 신청 가능합니다
+                        </p>
+                        <p class="text-[12px] font-light text-[#B4B4B4] tracking-tighter mb-[13px]">
+                            포인트 출금 처리 요청시<br>
+                            <span class="font-bold">개인정보 > 신원 인증 (휴대폰 인증 / 계좌 정보 등록)은 필수입니다</span>
+                        </p>
+                        <p class="text-[12px] font-light text-[#B4B4B4] tracking-tighter mb-[27px]">
+                            제품 생산 및 플랫폼 운영에 따른, 수수료 5%를 제외한<br>
+                            나머지 금액이 입금됩니다 (*원천세 및 부가세 별도)
+                        </p>
+                    </div>
+                    <div class="checkAccount flex items-start pl-[5px]">
+                        <input type="checkbox" name="checkaco" id="checkaco" class="mr-[5px]">
+                        <label for="checkaco">
+                            <span class="text-[12px] text-[#fff]">추후 컨텐츠 저작권 관련 문제 발생시<br>
+                                모든 법적 책임 및 대응 의무는 본인에게 있음을 확인합니다</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="text-[12px] font-boldtext-[#AAAAAA] tracking-tighter">포인트 출금 금액
+                        <div class="relative mt-[5px] ">
+                            <input type="text" 
+                            class="w-full h-[50px] mb-[20px] bg-transparent border border-[#C4C4C4] text-[#ddd] text-[15px] font-light rounded-none pl-[10px] pr-[85px]"
+                            placeholder="216,000">
+                        <div class="checkAccount2 absolute right-[10px] flex items-center top-[40%] translate-y-[-80%]">
+                            <input type="checkbox" name="checkaco2" id="checkaco2" class="mr-[5px]">
+                            <label for="checkaco2">
+                                <span class="text-[12px] pt-[3px] font-bold text-[#aaa]">전액 요청</span>
+                            </label>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <a href="javascript:void(0);"
+                        class="block bg-[#F5BE05] text-[#000] w-[220px] text-center font-bold text-[14px] py-[14px] tracking-tighter">포인트
+                        출금 요청</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
